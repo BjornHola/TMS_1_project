@@ -1,0 +1,128 @@
+.works {
+max-width: 100%;
+margin: 0 auto;
+}
+
+.works-wrapper {
+    width: 100%;
+    min-width: 320px;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.works__card {
+position: relative;
+max-width: 150px;
+height: 100%;
+border: 2px solid rgba(255, 255, 255, 1);
+}
+
+.works__card_same {
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+
+.text-opacity {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+width: 100%;
+height: 100%;
+text-align: center;
+margin: 0 auto;
+transition: all 0.3s ease;
+opacity: 0;
+}
+
+.work__card_text-covered, .work__card_text-covered-small {
+font-family: Raleway;
+line-height: 100%;
+letter-spacing: 0;
+text-align: center;
+color: rgba(255, 255, 255, 1);
+}
+
+.work__card_text-covered {
+font-weight: 900;
+font-size: 18px;
+text-transform: uppercase;
+padding: 10px;
+position: relative;
+top: 20px;
+}
+
+.work__card_text-covered-small {
+font-weight: 400;
+font-size: 14px;
+padding: 0 10px;
+position: relative;
+}
+
+
+
+@media screen and (min-width:440px) {
+.works-wrapper {
+    max-width: 440px;
+}
+.works__card {
+    max-width: 110px;
+    height: 100%;
+    box-sizing: border-box;
+}
+}
+
+@media screen  and (min-width:768px) {
+.works-wrapper {
+    max-width: 768px;
+}
+.works__card {
+    max-width: calc(768px / 4);
+}
+.work__card_text-covered {
+    line-height: 3;
+}
+.work__card_text-covered-small {
+    line-height: 2.5;
+}
+.works__card:hover .text-opacity,
+.works__card:hover .text-opacity {
+background:rgba(255, 67, 67, 0.8);
+opacity:1;
+}
+.works__card:active .text-opacity,
+.works__card:active .text-opacity {
+background:rgba(185, 12, 12, 0.8);
+opacity:1;
+}
+}
+
+@media screen and (min-width:1024px) {
+.works-wrapper {
+    max-width: 1024px;
+}
+.works__card {
+    min-width: calc(1024px / 4);
+}
+}
+
+@media screen and (min-width:1200px) {
+works-wrapper {
+min-width: min(90vw, 1500px);
+}
+.works__card {
+max-width: calc(1200px / 4);
+}
+.work__card_text-covered {
+font-size: 24px;
+line-height: 3.5;
+}
+.work__card_text-covered-small {
+font-size: 18px; 
+line-height: 3.5;
+}
+}

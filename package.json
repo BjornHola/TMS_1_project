@@ -1,0 +1,16 @@
+{
+  "name": "tms1-my-learning-project",
+  "version": "1.0.0",
+  "description": "This is my learning project for Teach me skills school",
+  "source": "src/index.html",
+  "scripts": {
+    "dev": "parcel",
+    "build": "parcel build"
+  },
+  "author": "Egor V",
+  "license": "ISC",
+  "dependencies": {
+    "parcel": "^2.15.1",
+    "sass": "^1.89.0"
+  }
+}

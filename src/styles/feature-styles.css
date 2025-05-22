@@ -1,0 +1,142 @@
+.section-feature {
+min-width: 100%;
+margin: 0 auto;
+padding: 40px 20px;
+}
+
+.section-feature-wrapper {
+width: 100%;
+padding: 0 20px;  
+margin:0 auto;
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 40px;
+}
+
+.feature-column {
+width: 100%;
+max-width:280px;
+display: flex;
+flex-flow: column;
+align-items: center;
+gap: 40px;
+box-sizing: border-box;
+}
+
+.feature-column__icon svg {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.feature-column__headline {
+max-width: 100%;
+min-width: 180px;
+}
+
+.feature-column__headline_bold {
+font-family: Raleway;
+font-weight: 900;
+font-size: 18px;
+line-height: 100%;
+letter-spacing: 0;
+text-align: center;
+text-transform: uppercase;
+color: rgba(45, 48, 51, 1);
+}
+
+.feature-column__text {
+max-width: 100%;
+min-width: 280px;
+}
+
+.feature-column__text_pale {
+font-family: Raleway;
+font-weight: 400;
+font-size: 14px;
+line-height: 100%;
+letter-spacing: 0%;
+text-align: center;
+vertical-align: middle;
+color: rgba(108, 114, 121, 1);
+}
+
+@media screen and (min-width: 768px) {
+    .section-feature {
+        width: 100%;
+        padding: 40px 0;
+    }
+    .section-feature-wrapper {
+    max-width: 768px;
+    max-height: 100%;
+    padding: 40px 0;
+    flex-flow: row wrap;
+    justify-content: center;
+    row-gap:20px;
+    column-gap:50px;
+    }
+    .feature-column {
+    min-width: 240px;
+    max-width: 300px;
+    max-height: 100%;
+    column-gap: 50px;
+    row-gap: 20px;
+    }
+    .feature-column__icon {
+    width: 85px;
+    height: 85px;
+    }
+}
+
+@media screen and (min-width:1024px) {
+.section-feature-wrapper {
+max-width: 1024px;
+column-gap: 90px;
+row-gap: 30px;
+}
+.feature-column {
+flex: 1 1 calc(33.333% - 60px);
+min-width: 280px;
+max-width: calc(33.333% - 60px);
+}
+}
+
+@media screen and (min-width:1200px) {
+    .section-feature {
+    margin: 10px;
+    padding: 130px 0;
+    }
+    .section-feature-wrapper {
+    max-width:1200px;
+    row-gap:30px;
+    column-gap:90px;
+    }
+
+    .feature-column {
+    flex-basis: calc(33.333% - 60px);
+    max-width: calc(33.333% - 60px);
+    }
+     .feature-column__icon {
+        width: 100px;
+        height: 100px;
+    }
+
+    .feature-column__headline {
+     min-width: 240px;
+     max-width: 100%;
+    }
+   
+    .feature-column__headline_bold {
+    font-size: 18px;
+    }
+    .feature-column__text {
+    min-width: 340px;
+    max-width: 100%;
+    }
+    .feature-column__text_pale {
+    font-size: 18px;
+    }
+    }
+   
+    
