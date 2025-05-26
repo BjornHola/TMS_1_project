@@ -1,18 +1,24 @@
 .section-quote {
-min-width: 100%;
+width: 100%;
 margin: 0 auto 30px;
 padding: 0 0 100px;
 background-color: rgba(92, 50, 73, 1);
 box-sizing: border-box;
 }
 
-.section-quote-wrapper {
+.swiper {
+position: relative;
+width: 100%;
+box-sizing: border-box;
+overflow: visible !important;
+}
+
+.swiper-slide {
 width: 100%;
 display: flex;
 flex-direction: column;
 align-items: center;
 row-gap: 30px;
-box-sizing: border-box;
 }
 
 .quote__image {
@@ -74,16 +80,36 @@ text-transform: uppercase;
 color: rgba(255, 255, 255, 1);
 }
 
+.swiper-pagination {
+  bottom: -40px !important; 
+  width: 100%;
+}
+
+.swiper-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 2px solid #080601;
+  background-color: transparent;
+}
+
+.swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #000;
+}
+
+.swiper-button-prev, .swiper-button-next {
+opacity: 0;
+pointer-events: none;
+}
+
 @media screen and (min-width: 768px) {
 .section-quote {
 margin: 0 auto 40px;
 padding: 0;
 }
-.section-quote-wrapper {
-min-width: 768px;
+.swiper-slide {
 flex-direction: row;
-justify-content: center;
-}
+  }
 .quote__image {
 min-width: 400px;
 min-height: 100%;
@@ -92,7 +118,6 @@ align-self: stretch;
 }
 .quote-text-wrapper {
 width: calc(100% - 400px);
-min-width: 55%; 
 }
 .quote__text {
 max-width: 100%;

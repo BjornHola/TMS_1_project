@@ -19,6 +19,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
 
   </head>
   <title>My TMS Learning Project</title>
@@ -333,14 +335,59 @@
 
 <!--Section with quote-->
 <section class="section-quote">    
-<div class="section-quote-wrapper"> 
-  <div class="quote__image"><img src="../src/assets/background-image-women-quote.jpg" alt="Our testimonials"> </div>    
+<div class="swiper"> <!--Main wrapper for all content of this section + to initiate Obhject Swiper-->
+  <div class="swiper-wrapper">  <!--Wrapper for slides--> 
+  <div class="swiper-slide">  <!--The firts slider-->
+    <div class="quote__image"><img src="../src/assets/background-image-women-quote.jpg" alt="Our testimonials"> </div>    
   <div class="quote-text-wrapper"> 
   <blockquote class="quote__text" cite="https://ru.pinterest.com/susantsims/">
 <p class="quote__text_italic">“Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Aenean eu leo quam...”</p>
   </blockquote>
   <div class="quote__author"> <p class="quote__author_tiny">Susan Sims, Interaction Designer at XYZ</p> </div>
   </div>
+  </div>
+<div class="swiper-slide">         <!--2nd Slider-->
+  <div class="quote__image"><img src="../src/assets/background-image-women-quote.jpg" alt="Our testimonials"> </div>    
+  <div class="quote-text-wrapper"> 
+  <blockquote class="quote__text" cite="https://ru.pinterest.com/susantsims/">
+<p class="quote__text_italic">“Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Aenean eu leo quam...”</p>
+  </blockquote>
+  <div class="quote__author"> <p class="quote__author_tiny">Susan Sims, Interaction Designer at XYZ</p> </div>
+</div> 
+</div>
+<div class="swiper-slide">         <!--3nd Slider-->
+  <div class="quote__image"><img src="../src/assets/background-image-women-quote.jpg" alt="Our testimonials"> </div>    
+  <div class="quote-text-wrapper"> 
+  <blockquote class="quote__text" cite="https://ru.pinterest.com/susantsims/">
+<p class="quote__text_italic">“Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Aenean eu leo quam...”</p>
+  </blockquote>
+  <div class="quote__author"> <p class="quote__author_tiny">Susan Sims, Interaction Designer at XYZ</p> </div>
+</div> 
+</div>
+<div class="swiper-slide">         <!--4th Slider-->
+  <div class="quote__image"><img src="../src/assets/background-image-women-quote.jpg" alt="Our testimonials"> </div>    
+  <div class="quote-text-wrapper"> 
+  <blockquote class="quote__text" cite="https://ru.pinterest.com/susantsims/">
+<p class="quote__text_italic">“Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Aenean eu leo quam...”</p>
+  </blockquote>
+  <div class="quote__author"> <p class="quote__author_tiny">Susan Sims, Interaction Designer at XYZ</p> </div>
+</div> 
+</div>
+<div class="swiper-slide">         <!--5th Slider-->
+  <div class="quote__image"><img src="../src/assets/background-image-women-quote.jpg" alt="Our testimonials"> </div>    
+  <div class="quote-text-wrapper"> 
+  <blockquote class="quote__text" cite="https://ru.pinterest.com/susantsims/">
+<p class="quote__text_italic">“Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Aenean eu leo quam...”</p>
+  </blockquote>
+  <div class="quote__author"> <p class="quote__author_tiny">Susan Sims, Interaction Designer at XYZ</p> </div>
+</div> 
+</div>
+</div>   <!--закрыли обертку для всего свайпера-->
+<!--Pagination-->
+<div class="swiper-pagination"></div>
+<!--Buttons-navigation-->
+<div class="swiper-button-prev"></div>
+<div class="swiper-button-next"></div>
 </div>
 </section>
 
@@ -399,5 +446,7 @@ Made with by Kamal Chaneman</p>
   </div>
 </footer>
 
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="../src/index.js"></script>
   </body>
 </html>
