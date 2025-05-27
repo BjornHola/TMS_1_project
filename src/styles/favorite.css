@@ -1,14 +1,16 @@
-.favorite-page {
-  min-width: 100%;
-  height: 100%;
-  margin: 0  auto;
-  padding: 50px 0;
-  background-color: #f0eeee80;
-  background-image: linear-gradient(rgba(37, 43, 73, 0.5), rgba(37, 43, 73, 0.8)),
+header, .favorite-page {
+background-image: linear-gradient(rgba(37, 43, 73, 0.5), rgba(37, 43, 73, 0.8)),
     url("../assets/favorite-image-desktop.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-color:rgba(255, 255, 255, 1);
+}
+
+.favorite-page {
+  min-width: 100%;
+  margin: 0  auto;
+  padding: 50px 0;
 }
 
 .favorite-page-wrapper {
