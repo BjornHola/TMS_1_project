@@ -111,13 +111,13 @@ padding: 0;
 flex-direction: row;
   }
 .quote__image {
-min-width: 400px;
+min-width: 430px;
 min-height: 100%;
 flex: 1 0 400px;
 align-self: stretch;
 }
 .quote-text-wrapper {
-width: calc(100% - 400px);
+width: calc(100% - 430px);
 }
 .quote__text {
 max-width: 100%;
@@ -151,13 +151,15 @@ min-width: 330px;
 
 @media screen and (min-width: 1200px) {
 .section-quote {
+max-width: 1510px;
 margin: 0 auto 50px;
+overflow: hidden;
 }
 .quote__image {
-flex: 1 1 60%;
+flex: 1 1 25%;
 }
 .quote-text-wrapper {
-flex: 1 1 40%;
+flex: 1 1 25%;
 }
 .quote__text {
 max-width: 470px;
