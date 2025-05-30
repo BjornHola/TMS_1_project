@@ -181,6 +181,10 @@ border: 1px solid rgba(186, 187, 197, 1);
 }
 
 @media screen and (min-width: 1200px) {
+.header-wrapper {
+  margin: 0 auto;
+  max-width: 1510px;
+  }
 .header__logo {
  margin: 0 0 0 170px;
 }
