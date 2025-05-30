@@ -1,0 +1,118 @@
+/* colors */
+/*  width-box-sizing */
+/* fonts */
+/* font-size */
+/* font-weight */
+/* breakpoints -min-width */
+.download-section {
+  min-width: 100%;
+  box-sizing: border-box;
+  padding: 60px 20px 50px;
+  margin: 0 auto;
+}
+.download-section .download-section-wrapper {
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 20px;
+}
+.download-section .download-section-wrapper .download__title {
+  min-width: 280px;
+  box-sizing: border-box;
+}
+.download-section .download-section-wrapper .download__title_black {
+  font-weight: 500;
+  font-size: 18px;
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
+.download-section .download-section-wrapper .download__title .quote__author_tiny {
+  font-family: "Raleway";
+  line-height: 100%;
+  letter-spacing: 0;
+  vertical-align: middle;
+  text-transform: uppercase;
+}
+.download-section .download-section-wrapper .download__text {
+  min-width: 280px;
+  box-sizing: border-box;
+}
+.download-section .download-section-wrapper .download__text_tiny {
+  font-weight: 700;
+  font-size: 13px;
+  font-family: "Raleway";
+  color: rgb(0, 0, 0);
+  line-height: 100%;
+  letter-spacing: 0;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+}
+.download-section .download-section-wrapper .download__button_medium {
+  width: 280px;
+  height: 80px;
+  font-weight: 900;
+  font-size: 18px;
+  color: rgb(255, 255, 255);
+  background: rgb(255, 67, 67);
+  font-family: "Raleway";
+  line-height: 100%;
+  letter-spacing: 0;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 768px) {
+  .download__button_medium:hover {
+    background-color: rgb(231, 20, 20);
+  }
+  .download__button_medium:active {
+    box-shadow: 4px 4px 30px 0px rgb(255, 67, 67);
+  }
+}
+@media screen and (min-width: 1024px) {
+  .download-section {
+    margin: 10px auto;
+  }
+  .download-section .download-section-wrapper .download__title {
+    min-width: 980px;
+  }
+  .download-section .download-section-wrapper .download__title .download__title_black {
+    font-size: 24px;
+  }
+  .download-section .download-section-wrapper .download__text {
+    min-width: 980px;
+    padding-bottom: 20px;
+  }
+  .download-section .download-section-wrapper .download__text .download__text_tiny {
+    font-size: 14px;
+  }
+  .download-section .download-section-wrapper .download__button_medium {
+    width: 310px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .download-section {
+    margin: 20px auto;
+  }
+  .download-section .download-section-wrapper .download__title {
+    min-width: 1170px;
+  }
+  .download-section .download-section-wrapper .download__title .download__title_black {
+    font-size: 30px;
+  }
+  .download-section .download-section-wrapper .download__text {
+    min-width: 1170px;
+    padding-bottom: 30px;
+  }
+  .download-section .download-section-wrapper .download__text .download__text_tiny {
+    font-size: 18px;
+  }
+  .download-section .download-section-wrapper .download__button_medium {
+    width: 370px;
+    font-size: 24px;
+  }
+}/*# sourceMappingURL=download-style.css.map */

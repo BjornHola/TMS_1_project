@@ -1,0 +1,176 @@
+
+/* colors */
+
+$white-color:  rgba(255, 255, 255, 1);
+$red-color: rgba(255, 67, 67, 1);
+$oxygen-red: rgba(231, 20, 20, 1);
+
+
+/*  width-box-sizing */
+$border-box: border-box;
+$width-base: 100%;
+$width-extra-small: 280px;
+$margin-center: 0 auto;
+$width-medi: 980px;
+$width-large: 1170px;
+
+/* fonts */
+$font-set: (
+  line-height: 100%,
+  letter-spacing: 0,
+  text-align: center,
+  vertical-align: middle,
+  text-transform: uppercase,
+  font-family: "Raleway",
+  color: rgba(0, 0, 0, 1)
+);
+
+/* font-size */
+$x-sm: 13px;
+$sm: 14px;
+$medi: 18px;
+$lar: 24px;
+$x-lar:30px;
+
+/* font-weight */
+$text-align-base: center;
+$font-w-base: 700;
+$font-w-sm: 500;
+$font-w-lar:900;
+
+/* breakpoints -min-width */
+$med: 768px;
+$larg: 1024px;
+$xlar: 1200px;
+
+@mixin width-initial {
+min-width: $width-base;
+box-sizing: $border-box;
+}
+
+@mixin width-ordinary {
+width: $width-base;
+box-sizing: $border-box;
+}
+
+@mixin flex-package {
+display: flex;
+flex-direction: column;
+align-items: center;
+row-gap: 20px;
+}
+
+.download-section {
+@include width-initial;
+padding: 60px 20px 50px;
+margin: $margin-center;
+    .download-section-wrapper{
+    @include width-ordinary;
+    @include flex-package;
+        .download__title {
+        min-width:$width-extra-small;
+        box-sizing: $border-box;
+            &_black {
+            font-weight: $font-w-sm;
+            font-size: $medi;
+            text-align: $text-align-base;
+            color: map-get($font-set, "color");
+            }
+            .quote__author_tiny {
+            font-family: map-get($font-set, "font-family");
+            line-height: map-get($font-set, "line-height");
+            letter-spacing: map-get($font-set, "letter-spacing");
+            vertical-align: map-get($font-set, "vertical-align");
+            text-transform: map-get($font-set, "text-transform");
+            }
+        }   
+        .download__text {
+        min-width: $width-extra-small;
+        box-sizing: $border-box;
+            &_tiny {
+            font-weight: $font-w-base;
+            font-size: $x-sm;
+            font-family: map-get($font-set, "font-family");
+            color: map-get($font-set, "color");
+            line-height: map-get($font-set, "line-height");
+            letter-spacing: map-get($font-set, "letter-spacing");
+            text-align: map-get($font-set, "text-align");
+            vertical-align: map-get($font-set, "vertical-align");
+            text-transform: map-get($font-set, "text-transform");
+            }
+        }
+        .download__button_medium  {
+        width: $width-extra-small;
+        height: 80px;
+        font-weight: $font-w-lar;
+        font-size: $medi;
+        color:$white-color;
+        background:$red-color;
+        font-family: map-get($font-set, "font-family");
+        line-height: map-get($font-set, "line-height");
+        letter-spacing: map-get($font-set, "letter-spacing");
+        text-align: map-get($font-set, "text-align");
+        vertical-align: map-get($font-set, "vertical-align");
+        text-transform: map-get($font-set, "text-transform");
+        }   
+       
+    }
+}
+
+@media screen and (min-width: $med) {
+.download__button_medium:hover {
+background-color:$oxygen-red;
+}
+.download__button_medium:active {
+box-shadow: 4px 4px 30px 0px $red-color;
+}
+}
+
+@media screen and (min-width: $larg) {
+.download-section {
+margin: 10px auto;
+.download-section-wrapper {
+  .download__title {
+  min-width: $width-medi;
+    .download__title_black {
+    font-size: $lar;
+    }
+  }
+  .download__text {
+  min-width: $width-medi;
+  padding-bottom: 20px;
+    .download__text_tiny {
+    font-size: $sm;
+    }
+  }
+  .download__button_medium{
+  width: 310px;
+  }
+}
+}
+}
+
+@media screen and (min-width: $xlar) {
+.download-section {
+margin: 20px auto;
+ .download-section-wrapper {
+  .download__title {
+  min-width: $width-large;
+    .download__title_black {
+    font-size: $x-lar;
+    }
+  }
+  .download__text {
+  min-width: $width-large;
+  padding-bottom: 30px;
+    .download__text_tiny {
+    font-size: $medi;
+    }
+  }
+  .download__button_medium{
+  width: 370px;
+  font-size: $lar;
+  }
+}
+}
+}

@@ -145,8 +145,10 @@ max-width: 315px;
 
 @media screen and (min-width: 1200px) {
 .footer-wrapper {
+max-width: 1200px;
 padding: 70px 160px;
 column-gap: 30px;
+margin:0 auto;
     }
 .footer-address, .footer-social-media, .footer-about {
 max-width: 370px;
