@@ -20,7 +20,10 @@ breakpoints: {
     },
     1200: {
       slidesPerView: 1,
-      spaceBetween: 40
+      spaceBetween: 40,
+      pagination: {
+        enabled: true
+      }
     }
  } 
 })

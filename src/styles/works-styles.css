@@ -168,3 +168,24 @@ font-size: 18px;
 line-height: 1.5;
 }
 }
+
+@media screen and (min-width:1500px) {
+.works-wrapper {
+    max-width: 1500px;
+}
+.works__card {
+max-width: calc(1500px / 4);
+flex-basis: 350px;
+flex-grow: 1;
+}
+.work__card_text-covered {
+top: 80px; 
+font-size: 26px;
+line-height: 2;
+}
+.work__card_text-covered-small {
+    top: 90px;
+font-size: 20px; 
+line-height: 2;
+}
+}

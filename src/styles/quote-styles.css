@@ -4,6 +4,7 @@ margin: 0 auto 30px;
 padding: 0 0 100px;
 background-color: rgba(92, 50, 73, 1);
 box-sizing: border-box;
+position: relative;
 }
 
 .swiper {
@@ -154,6 +155,12 @@ min-width: 330px;
 max-width: 1510px;
 margin: 0 auto 50px;
 overflow: hidden;
+}
+.swiper-pagination {
+  position: absolute;
+  z-index: 100;
+transform: none !important;
+  clip-path: none !important;
 }
 .quote__image {
 flex: 1 1 25%;
